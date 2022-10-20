@@ -121,6 +121,6 @@ app.delete('/livros/:id', async (req, res) => {
 
 });
 
-app.listen(5050, () => {
+app.listen(process.env.PORT || 5050, () => {
     console.log('Voce esta conectado em http://localhost:5050')
 });
